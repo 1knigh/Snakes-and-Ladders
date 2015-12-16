@@ -1,0 +1,254 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.1em;
+	background-color: lightgrey;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 2.2em;
+	line-height: 2.7em;
+}
+.upp h1 {
+	margin-bottom: 10em;
+	
+}
+
+h2 {
+	font-size: 2.5em;
+	line-height: 2.5em;
+}
+
+h3 {
+	font-size: 2em;
+	line-height: 2em;
+}
+
+h4 {
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+h5 {
+	font-size: 1em;
+	line-height: 1em;
+}
+
+h6 {
+	font-size: 0.5em;
+	line-height: 0.5em;
+}
+
+/* Layout style for columns */
+.col-1 {
+	width: 8.33%;
+}
+
+.col-2 {
+	width: 16.66%;
+}
+
+.col-3 {
+	width: 25%
+}
+
+.col-4 {
+	width: 33.33%;
+}
+
+.col-5 {
+	width: 41.66%
+}
+
+.col-6 {
+	width: 50%
+	
+}
+
+
+.col-7 {
+	width: 58.33%
+}
+
+.col-8 {
+	width: 66.66%
+}
+
+.col-9 {
+	width: 75%;
+}
+
+.col-10 {
+	width: 83.33%
+}
+
+.col-11 {
+	width: 91.66%
+}
+
+.col-12 {
+	width: 100%;
+}
+
+/* Content Layout */
+
+
+
+.container div {
+	padding-left: 2em;
+	
+}
+
+.left img {
+	margin-left: 4.16%;
+}
+.inline-block {
+	display: inline-block;
+}
+
+.push-half {
+	margin-left: 10.16%;
+}
+
+.left {
+	float: left;
+	
+}
+
+.push-1 {
+	margin-left: 8.33%;
+}
+
+.push-2 {
+	margin: 16.16%;
+}
+
+.push-3  {
+	margin-bottom: 30;
+}
+
+/* Navigation styles */
+.active {
+	background-color: darkgray;
+}
+
+
+.masthead {
+	background-color: black;
+}
+
+
+/* navigation styles for small screens */
+
+
+.toggle {	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.toggle li {
+	display: flex;
+	min-height: 3em;
+}
+
+.toggle button {
+	margin-top: 0.5em;
+	margin-right: 0.5em;
+	display: block;
+	width: 3.5em;
+	height: 3.5em;
+	border-radius: 10px;
+	color: white;
+}
+
+
+.nav-bar {
+	display: none;
+}
+
+
+
+
+/* navigation styles for larger screens */
+@media only screen and (min-width: 620px) {
+
+	/* navigation sytles */
+	
+	.active {
+		background-color: grey;
+	}
+	
+	header {
+		margin: 0;
+		background-color: black;
+	}
+	
+	.main-nav {
+		height: 40px;
+	}
+	
+	.main-nav ul {
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	}
+	
+	.main-nav li {
+		display: inline-block;
+		overflow: auto;
+	}
+	
+	.main-nav li:hover {
+		background-color: darkgray;	
+	}
+	
+	.main-nav a {
+		padding: 0 10px;
+		line-height: 40px;
+		width: 100px;
+		height: 40px;
+		text-decoration: none;
+		color: white;
+		display: block;
+	}
+	
+	/* dropdown list styles */
+	
+	.dropdown {
+		position: absolute;
+		top: 40px;
+		background-color: black;
+		display: none;	
+		overflow: auto;
+		z-index: 100;
+	}
+	
+	.dropdown li {
+		display: block;
+	}
+	
+	.dropdown a {
+		width: 60px;
+	}
+	
+	li:hover > .dropdown {
+		display: block;
+		width: 120px;
+	}
+
+}
+
+
+
+/* footer styles */
+
+
+footer {
+	padding: 2%;
+}
